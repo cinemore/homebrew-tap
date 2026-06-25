@@ -1,17 +1,17 @@
 class RifeMetal < Formula
   desc "Native macOS RIFE frame interpolation CLI"
   homepage "https://github.com/cinemore/rife-metal"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   depends_on macos: :ventura
 
   if Hardware::CPU.arm?
-    url "https://github.com/cinemore/rife-metal/releases/download/v0.1.3/rife-metal-macos-arm64.tar.gz"
-    sha256 "98b275c128115f45b05f13456532936f6847e681a6594824fd3439e1e39e7c7e"
+    url "https://github.com/cinemore/rife-metal/releases/download/v0.1.4/rife-metal-macos-arm64.tar.gz"
+    sha256 "958795e47edacb1c2ed01cb7c414094c4fc97d5d1e7646a658986da52b3e79ce"
   else
-    url "https://github.com/cinemore/rife-metal/releases/download/v0.1.3/rife-metal-macos-x86_64.tar.gz"
-    sha256 "f0d56f665bd2619835d50be5c38fe100251e2815c5fc958f72acd1519a1c64bf"
+    url "https://github.com/cinemore/rife-metal/releases/download/v0.1.4/rife-metal-macos-x86_64.tar.gz"
+    sha256 "382b5d65624c05ff7deff2d3870a72b45a50a344655260c200b4bec67cd35b7c"
   end
 
   def install
