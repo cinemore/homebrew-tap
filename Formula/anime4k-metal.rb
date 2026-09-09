@@ -1,17 +1,17 @@
 class Anime4kMetal < Formula
   desc "Native macOS Anime4K image enhancement CLI"
   homepage "https://github.com/cinemore/anime4k-metal"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   depends_on macos: :ventura
 
   if Hardware::CPU.arm?
-    url "https://github.com/cinemore/anime4k-metal/releases/download/v0.1.2/anime4k-metal-macos-arm64.tar.gz"
-    sha256 "ab9cefa2920663adbcee0804cc42ed0325888d12a7a9b35ae59b508bd0f91929"
+    url "https://github.com/cinemore/anime4k-metal/releases/download/v0.1.3/anime4k-metal-macos-arm64.tar.gz"
+    sha256 "81d30e886a04d2bdb6d58ddf8bb8273bf38b29aec1a877faf53d738bafeb724b"
   else
-    url "https://github.com/cinemore/anime4k-metal/releases/download/v0.1.2/anime4k-metal-macos-x86_64.tar.gz"
-    sha256 "3cb0a475bc0282d0611d8620b805bce3dda2f0f9e12db57623212b1fa38abd57"
+    url "https://github.com/cinemore/anime4k-metal/releases/download/v0.1.3/anime4k-metal-macos-x86_64.tar.gz"
+    sha256 "41d45b5b042ede60c0d7d9ad64aedd127be9c97bd9e1c35ad0ace0dea4287154"
   end
 
   def install
