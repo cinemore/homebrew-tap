@@ -1,21 +1,22 @@
 class RifeMetal < Formula
   desc "Native macOS RIFE frame interpolation CLI"
   homepage "https://github.com/cinemore/rife-metal"
-  version "0.1.4"
+  version "0.1.6"
   license "Apache-2.0"
 
   depends_on macos: :ventura
 
   if Hardware::CPU.arm?
-    url "https://github.com/cinemore/rife-metal/releases/download/v0.1.4/rife-metal-macos-arm64.tar.gz"
-    sha256 "958795e47edacb1c2ed01cb7c414094c4fc97d5d1e7646a658986da52b3e79ce"
+    url "https://github.com/cinemore/rife-metal/releases/download/v0.1.6/rife-metal-macos-arm64.tar.gz"
+    sha256 "5543d97c51d28ad8012ae5d149ac3a55259ea69e0cd14c929041187eb972c59d"
   else
-    url "https://github.com/cinemore/rife-metal/releases/download/v0.1.4/rife-metal-macos-x86_64.tar.gz"
-    sha256 "382b5d65624c05ff7deff2d3870a72b45a50a344655260c200b4bec67cd35b7c"
+    url "https://github.com/cinemore/rife-metal/releases/download/v0.1.6/rife-metal-macos-x86_64.tar.gz"
+    sha256 "0af50f7d110dfdccc1931bd6cdeb6f520df3efed431dd7737334a16b64eabc7f"
   end
 
   def install
     libexec.install "bin/rife-metal"
+    libexec.install "bin/RifeMetal_RifeMetalCore.bundle"
     pkgshare.install "share/rife-metal/rife-v4.26.rmw"
 
     (bin/"rife-metal").write <<~SH
