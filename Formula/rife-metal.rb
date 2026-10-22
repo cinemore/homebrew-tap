@@ -17,7 +17,7 @@ class RifeMetal < Formula
   def install
     libexec.install "bin/rife-metal"
     libexec.install "bin/RifeMetal_RifeMetalCore.bundle"
-    pkgshare.install "share/rife-metal/rife-v4.26.rmw"
+    pkgshare.install "share/rife-metal/rife-v4.25.rmw"
 
     (bin/"rife-metal").write <<~SH
       #!/bin/sh
@@ -37,7 +37,7 @@ class RifeMetal < Formula
       if [ "$has_model" -eq 1 ]; then
         exec "#{libexec}/rife-metal" "$@"
       else
-        exec "#{libexec}/rife-metal" "$@" --model "#{pkgshare}/rife-v4.26.rmw"
+        exec "#{libexec}/rife-metal" "$@" --model "#{pkgshare}/rife-v4.25.rmw"
       fi
     SH
   end
