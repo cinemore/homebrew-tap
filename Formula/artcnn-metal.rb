@@ -8,10 +8,10 @@ class ArtcnnMetal < Formula
 
   if Hardware::CPU.arm?
     url "https://github.com/cinemore/artcnn-metal/releases/download/v0.1.0/artcnn-metal-macos-arm64.tar.gz"
-    sha256 "d74f0f12e73c29b3fd7adbceb7ddbc268b6a4ea88bc66d7ca1a862b265bba7e5"
+    sha256 "3e13b4186b6cf3aa3429fb5723bb036b544c0cbd9b5e49bacd10009f09e7864a"
   else
     url "https://github.com/cinemore/artcnn-metal/releases/download/v0.1.0/artcnn-metal-macos-x86_64.tar.gz"
-    sha256 "e8e3de706de8559cb0550d8228bdf773afcebebc9c6c976763cf94d85a6120a7"
+    sha256 "4a6b3353ffd76da046a75934bfb1e967d88ca3fbba3000705f01e60e99da16e1"
   end
 
   def install

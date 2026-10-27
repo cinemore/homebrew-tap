@@ -8,10 +8,10 @@ class FsrMetal < Formula
 
   if Hardware::CPU.arm?
     url "https://github.com/cinemore/fsr-metal/releases/download/v0.1.0/fsr-metal-macos-arm64.tar.gz"
-    sha256 "df90f05cc4189d4f3ed05d234f336e0d0381b47c334d75f9f21215caf966dd47"
+    sha256 "cddab7600a7643f2a5c67eb1835c92adf042fe2bf1f1e59767846d2bc18780c2"
   else
     url "https://github.com/cinemore/fsr-metal/releases/download/v0.1.0/fsr-metal-macos-x86_64.tar.gz"
-    sha256 "e60eff51285a8b97da7919c164914d7956868886b9de6d13e704493dffbb3c34"
+    sha256 "0337d57215b7c7c55bdc7a2a84b67c4df3ed478d2536c543f2bae2c4f0f8dd60"
   end
 
   def install
