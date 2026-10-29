@@ -7,7 +7,7 @@ cask "cineplayer" do
   desc "Video player"
   homepage "https://github.com/cinemore/CinePlayer"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "CinePlayer.app"
 end
